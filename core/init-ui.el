@@ -6,7 +6,7 @@
 (set-fontset-font "fontset-default" 'gb18030 '("Microsoft YaHei" . "unicode-bmp"))
 
 ;; 编码设置 begin
-;(set-language-environment 'Chinese-GB)
+(set-language-environment 'utf-8)
 ; default-buffer-file-coding-system变量在emacs23.2之后已被废弃，使用buffer-file-coding-system代替
 ;(set-default buffer-file-coding-system 'utf-8-unix)
 ;(set-default-coding-systems 'utf-8-unix)
@@ -20,11 +20,11 @@
 (prefer-coding-system 'gb2312)
 (prefer-coding-system 'cp936)
 (prefer-coding-system 'gb18030)
-(prefer-coding-system 'utf-16le-with-signature)
-(prefer-coding-system 'utf-16)
+;(prefer-coding-system 'utf-16le-with-signature)
+;(prefer-coding-system 'utf-16)
 ;; 新建文件使用utf-8-unix方式
 ; 如果不写下面两句，只写
-;(prefer-coding-system 'utf-8)
+(prefer-coding-system 'utf-8)
 ; 这一句的话，新建文件以utf-8编码，行末结束符平台相关
 (prefer-coding-system 'utf-8-dos)
 (prefer-coding-system 'utf-8-unix)
@@ -39,20 +39,20 @@
 ;;强调当前行
 
 (setq default-frame-alist
-             '((font . "Consolas 11")
-	           (Vertical-scroll-bars)  
-               (top . 30)
-               (left . 150)                               
-               (width . 100)
-               (height . 30)           
-               ;(background-color . "black")
-               ;(foreground-color . "grey")
-               (cursor-color     . "gold1")
-               (mouse-color      . "gold1")
-               (tool-bar-lines . 0)
-               (menu-bar-lines . 1)
-               (right-fringe)
-               (left-fringe)))
+      '( (font . "Consolas 11")
+         (Vertical-scroll-bars)  
+         (top . 30)
+         (left . 150)                               
+         (width . 100)
+         (height . 30)           
+        ;(background-color . "black")
+        ;(foreground-color . "grey")
+         (cursor-color     . "gold1")
+         (mouse-color      . "gold1")
+         (tool-bar-lines . 0)
+         (menu-bar-lines . 1)
+         (right-fringe)
+         (left-fringe)))
 
 (display-time-mode 1);;启用时间显示设置，在minibuffer上面的那个杠上
 (setq display-time-24hr-format t);;时间使用24小时制
@@ -72,9 +72,6 @@
 
 (setq inhibit-startup-message t)
 ;;关闭emacs启动时的画面
-
-(setq gnus-inhibit-startup-message t)
-;;关闭gnus启动时的画面
 
 (fset 'yes-or-no-p 'y-or-n-p)
 ;; 改变 Emacs 固执的要你回答 yes 的行为。按 y 或空格键表示 yes，n 表示 no。

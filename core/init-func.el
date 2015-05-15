@@ -7,6 +7,7 @@
   (make-frame-invisible nil t))
 
 (when (equal system-type 'windows-nt)
+  (setq file-name-coding-system 'gbk)
   (global-set-key (kbd "C-x C-c") 'xy/done) ;; virtually kill a frame
   (global-set-key (kbd "C-x M-c") 'save-buffers-kill-emacs)) ;; kill emacs
 (when window-system
