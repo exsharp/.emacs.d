@@ -38,7 +38,8 @@
 (require 'init-ace-jump-mode)
 (require 'init-web-mode)
 (require 'init-git)
-(require 'init-paredit)
+;(require 'init-paredit)
+(require 'init-smartparens)
 ;(require 'init-sr-speedbar)
 (require 'init-go-mode)
 (require 'init-flycheck)       ;语法检查

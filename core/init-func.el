@@ -13,13 +13,6 @@
 (when window-system
   (define-key special-event-map [delete-frame] 'xy/done))
 
-(defun RET ()
-  (local-set-key (kbd "RET") 'newline-and-indent)
-  (setq tab-width 2))
-(add-hook 'emacs-lisp-mode-hook 'RET)
-(add-hook 'lisp-mode-hook 'RET)
-
-
 (defun python-compile ()
   (interactive)
   (save-buffer)
