@@ -28,15 +28,17 @@
 ;----------------------------------------------------------------------
 (require 'init-evil)
 (require 'init-color-theme)
-(require 'init-smex)
+(require 'init-smex)		   ;minibuffer补全
 (require 'init-powerline)      ;minibuffer上面的状态栏
 (require 'init-yasnippet)      ;模板补全
-(require 'init-auto-complete)
+(require 'init-auto-complete)  ;自动补全
 (require 'init-tabbar)         ;tab标签
 (require 'init-linum-relative) ;相对的行数
 (require 'init-jedi)           ;python补全服务
 (require 'init-ace-jump-mode)
 (require 'init-web-mode)
+(require 'init-git)
+(require 'init-paredit)
 ;(require 'init-sr-speedbar)
 (require 'init-go-mode)
 (require 'init-flycheck)       ;语法检查

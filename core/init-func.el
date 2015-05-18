@@ -13,6 +13,31 @@
 (when window-system
   (define-key special-event-map [delete-frame] 'xy/done))
 
-;(add-hook 'after-init-hook '(lambda () (xy/done)));;开启程序即启用
+(defun RET ()
+  (local-set-key (kbd "RET") 'newline-and-indent)
+  (setq tab-width 2))
+(add-hook 'emacs-lisp-mode-hook 'RET)
+(add-hook 'lisp-mode-hook 'RET)
+
+
+(defun python-compile ()
+  (interactive)
+  (save-buffer)
+  (compile (concat "python " (buffer-name (current-buffer)))))
+
+(defun go-compile ()
+  (interactive)
+  (save-buffer)
+  (compile (concat "go run " (buffer-name (current-buffer)))))
+
+(add-hook 'python-mode-hook 
+  (lambda ()
+    (interactive)
+    (local-set-key (kbd "<f5>") 'python-compile)))
+
+(add-hook 'go-mode-hook
+  (lambda ()
+    (interactive)
+    (local-set-key (kbd "<f5>") 'go-compile)))
 
 (provide 'init-func)
