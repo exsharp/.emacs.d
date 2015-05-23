@@ -30,6 +30,8 @@
 (setq-default cursor-type 'bar) 
 ;;设置光标为竖线
 
+
+
 (global-linum-mode t)
 ;;在buffer右侧显示行号
 (global-hl-line-mode t)
@@ -67,6 +69,8 @@
 
 (setq visible-bell t)
 ;;关闭烦人的出错时的提示声
+(setq ring-bell-function 'ignore)
+;;到文件最上或最下不闪屏
 
 (setq inhibit-startup-message t)
 ;;关闭emacs启动时的画面
@@ -81,7 +85,7 @@
 (setq kill-ring-max 200)
 ;;设置粘贴缓冲条目数量.用一个很大的kill ring(最多的记录个数). 这样防止我不小心删掉重要的东西
 
-;;(setq-default c-basic-offset 4)
+(setq-default c-basic-offset 4)
 ;;(setq c-default-style "linux")
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)

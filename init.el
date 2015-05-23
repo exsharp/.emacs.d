@@ -38,12 +38,16 @@
 (require 'init-ace-jump-mode)
 (require 'init-web-mode)
 (require 'init-git)
-;(require 'init-paredit)
-(require 'init-smartparens)
+;(require 'init-cedet)
+(require 'init-paredit)
+(require 'init-irony-mode)
+;(require 'init-smartparens)
 ;(require 'init-sr-speedbar)
+;(require 'init-auto-complete-clang)
+;(require 'init-auto-complete-clang-async)
 (require 'init-go-mode)
 (require 'init-flycheck)       ;语法检查
-(require 'init-flyspell)
+;(require 'init-flyspell)
 (require 'init-highlight-parentheses)
 ;----------------------------------------------------------------------
 

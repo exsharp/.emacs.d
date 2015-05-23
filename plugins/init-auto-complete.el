@@ -5,7 +5,7 @@
 (global-auto-complete-mode t)
 
 (setq-default ac-expand-on-auto-complete nil)
-(setq-default ac-auto-start t)
+;;(setq-default ac-auto-start t)
 (setq-default ac-auto-show-menu 0);ac菜单的弹出延时时间
 (setq-default ac-auto-start 2);输入2个字符后开始自动完成
 (setq-default ac-dwim nil) ; To get pop-ups with docs even if a word is uniquely completed4
@@ -24,8 +24,8 @@
 
 ;; TODO: find solution for php, haskell and other modes where TAB always does something
 
-(setq c-tab-always-indent nil
-      c-insert-tab-function 'indent-for-tab-command)
+;(setq c-tab-always-indent nil
+;      c-insert-tab-function 'indent-for-tab-command)
 
 ;; hook AC into completion-at-point
 (defun sanityinc/auto-complete-at-point ()
