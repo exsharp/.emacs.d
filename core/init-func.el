@@ -3,7 +3,7 @@
   (interactive)
   (save-some-buffers) ;; Save edited buffers first!
   (kill-buffer)
-  (server-edit)
+  ;(server-edit)
   (make-frame-invisible nil t))
 
 (when (equal system-type 'windows-nt)
@@ -32,5 +32,10 @@
   (lambda ()
     (interactive)
     (local-set-key (kbd "<f5>") 'go-compile)))
+
+(add-hook 'kill-emacs-hook  ;;
+  (lambda() ;;
+    (if (file-exists-p "~/.emacs.d/server/server") ;;
+      (delete-file "~/.emacs.d/server/server")))) ;;
 
 (provide 'init-func)
