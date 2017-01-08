@@ -4,8 +4,8 @@ Windows Registry Editor Version 5.00
 [HKEY_CLASSES_ROOT\*\shell\emacs]
 @="&Edit with Emacs"
 [HKEY_CLASSES_ROOT\*\shell\emacs\command]
-@="C:\\Emacs\\bin\\emacsclientw.exe -a \"\" -n -c \"%1\""
+@="C:\\Emacs\\bin\\emacsclientw.exe -n \"%1\""
 [HKEY_CLASSES_ROOT\Directory\shell\emacs]
 @="Edit &with Emacs"
 [HKEY_CLASSES_ROOT\Directory\shell\emacs\command]
-@="C:\\Emacs\\bin\\emacsclientw.exe -a \"\" -n -c \"%1\""
+@="C:\\Emacs\\bin\\emacsclientw.exe -n \"%1\""
