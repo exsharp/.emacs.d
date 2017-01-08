@@ -1,6 +1,3 @@
-;; configure position of saving and the sequence of loading about files.
-;; the init-ui must put the first and the init-elpa must pu the second.
-
 ;; configure the position of saving.
 
 ;; Added by Package.el.  This must come before configurations of
