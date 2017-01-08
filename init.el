@@ -31,5 +31,6 @@
 (require 'init-auto-complete)  ;自动补全
 (require 'init-go-mode)		   ;Go-mode
 (require 'init-jedi)           ;Pyhon 自动补全
+(require 'init-sr-speedbar)
 ;----------------------------------------------------------------------
 (provide 'init)

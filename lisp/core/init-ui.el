@@ -16,11 +16,6 @@
 (global-auto-revert-mode t)
 ;;在外部更新文件后，自动更新
 
-(global-linum-mode t)
-;;在buffer右侧显示行号
-(global-hl-line-mode t)
-;;强调当前行
-
 (set-fontset-font "fontset-default" 'gb18030 '("Microsoft YaHei" . "unicode-bmp"))
 (setq default-frame-alist
       '( (font . "Consolas 11")
@@ -62,6 +57,10 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 ;; 改变 Emacs 固执的要你回答 yes 的行为。按 y 或空格键表示 yes，n 表示 no。
 
+(global-linum-mode t)
+;;在buffer右侧显示行号
+(global-hl-line-mode t)
+;;强调当前行
 (setq column-number-mode t) 
 (setq line-number-mode t)
 ;;显示行列号
